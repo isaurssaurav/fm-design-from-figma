@@ -146,7 +146,7 @@ section.acquire-customers-section-md{
                 color: $purple;
                 &::before{
                     content: "";
-                    background: url(/assets/image/compass.svg);
+                    background: url('../assets/image/compass.svg');
                     width: 24px;
                     height: 24px;
                     display: block;
@@ -172,7 +172,7 @@ section.acquire-customers-section-md{
                 border-bottom: 1px solid ;
                 &::before{
                     content: "";
-                    background: url(/assets/image/disk.svg);
+                    background: url(../assets/image/disk.svg);
                     width: 24px;
                     height: 24px;
                     display: block;
@@ -182,7 +182,7 @@ section.acquire-customers-section-md{
                 }
                 &:first-of-type:before{
                         content: "";
-                        background: url(/assets/image/building.svg);
+                        background: url(../assets/image/building.svg);
                         width: 24px;
                         height: 24px;
                         display: block;
