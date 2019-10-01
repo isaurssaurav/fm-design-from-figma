@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  $medium-padding:0 130px;
+  .container{
+    padding: 0 15px;
+    @include medium-screen{
+      padding: $medium-padding;
+    }
+    .no-container{
+      margin: 0 -15px;
+      @include medium-screen{
+        margin: 0 -150px;
+        background: #2B292D;
+mix-blend-mode: normal;
+opacity: 0.1;
+      }
+    }
+  }
+  .show {display: block !important}

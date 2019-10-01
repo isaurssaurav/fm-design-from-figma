@@ -1,0 +1,99 @@
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    @include medium-screen{
+       background: $pink-dark-background;
+       padding: 40px 130px;
+       height: auto;
+    }
+}
+.navbar{
+    display: none;
+    @include medium-screen{
+        display: flex;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        li{
+            position: relative;
+        }
+        #library-btn{
+            &:after{
+                content: "";
+                background: url('/assets/image/arrow-down.svg');
+                width: 10px;
+                height: 8px;
+                display: block;
+                background-repeat: no-repeat;
+                float: left;
+                margin-right: 15px;
+                position: absolute;
+                top: 22px;
+                right: -33px;
+            }
+        }
+        li:not(:last-child){
+            margin-right: 62px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+           
+            &.active{
+                font-weight: bold;
+            }
+        }
+    }
+}
+.product-logo{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .logo-label {
+        margin-left:13px;
+        span{
+            display: none;
+         
+            @include medium-screen{
+                display: block;
+
+            }
+        }
+        
+        h1{
+            font-size: 20px;
+            font-family: inherit;
+            font-weight: bold;
+        }
+    }
+    .svg-container{
+        position: relative;
+        width:48px;
+         height:48px;
+         @include medium-screen{
+            width:60px;
+            height:60px;
+         }
+         img{
+             position: absolute;
+            width: 100%; 
+            left: 0; 
+            top: 0;
+         }
+    }
+    @include medium-screen{
+        margin-left:0; 
+    }
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-left: 1px solid #000000;
+    opacity: 0.15;
+    @include medium-screen{
+        display: none;
+    }
+}

@@ -1,0 +1,118 @@
+footer{
+    overflow: hidden;
+    padding: 40px 0;
+    @include medium-screen{
+        padding: 40px 0 5px 0;
+        .footer-top{
+            display: flex;
+        }
+        .footer-bottom{
+            margin-top: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .company-logo{
+            width: 360px;
+            margin-right: 20%;
+            .company-description{
+                font-size: 18px;
+                line-height: 26px;
+                /* or 144% */
+                margin-bottom: 25px;
+
+                color: rgba(43, 41, 45, 0.6);
+            }
+          
+        }
+        .logo{
+            font-size: 20px;
+            line-height: 25px;
+            /* or 125% */
+            margin-top: -16px;
+
+            color: #2B292D;
+
+            display: flex;
+
+            img{
+                margin-right: 15px;
+            }
+        }
+    }
+    .company-logo{
+        // border-bottom: 1px solid $grey;
+        padding: 0 0 40px 0;
+        text-align: center;
+        @include medium-screen{
+            text-align: left
+        }
+        font-size: 20px;
+        .company-name{
+            font-family: inherit;
+            font-weight: bold;
+            line-height: 25px;
+            @include medium-screen{
+                margin-top: 16px;
+            }
+        }
+        .company-subtitle{
+            color: $grey;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    .footer-listing{
+        margin-bottom: 30px;
+        @include medium-screen{
+            ul{
+                width: 265px;
+                margin-right: 10px;
+            }
+        }
+        .title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 28px;
+            color: $black;
+            margin-bottom: 18px;
+        }
+        li{
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 30px;
+            color: rgba(43, 41, 45, 0.6);
+        }
+    }
+    .terms-privacy{
+        @include medium-screen{
+        margin-bottom: 0px;
+
+        }
+        margin-bottom: 30px;
+        ul{
+
+            display: flex;
+            li{
+                font-size: 14px;
+                line-height: 22px;
+                color: rgba(43, 41, 45, 0.6);
+                margin-right: 6px;
+                @include medium-screen{
+                    margin-right: 10px;
+            
+                    }
+            }
+        }
+    }
+    .socail-media{
+        @include medium-screen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            margin-right: 20px;
+        }
+    }
+}
