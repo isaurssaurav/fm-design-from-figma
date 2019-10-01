@@ -7,4 +7,8 @@ Design to HTML/CSS
 2. yarn
 3. gulp
 
+## Design
+
+![alt text](https://isaurssaurav.github.io/fm-design-from-figma/assets/image/design.png)
+
 
